@@ -1,0 +1,151 @@
+/* ========================== CSS Reset ========================== */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== */
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Outfit, sans-serif;
+}
+.container {
+    background-color:  hsl(216, 50%, 16%);
+    width: 350px;
+    height: 596px;
+    border-radius: 18px;
+}
+
+.image {
+    height: 303px;
+    width: 302px;
+    margin: 24px 24px 0;
+    border-radius: 7px;
+}
+
+#heading {
+    color: white;
+    margin: 23px 24px 0px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 24px;
+    margin: 16px 0;
+}
+
+
+
+.eth-price {
+    /* display: flex; */
+    margin-left: 24px;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-duration {
+    margin-right: 24px;
+}
+.child {
+    display: inline-block;
+}
+
+.duration {
+    margin-left: 7px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1%;
+}
+
+hr {
+    width: 304px;
+    margin: 24px auto 18px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.avatar {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 24px;
+}
+
+.creator-details {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 18px;
+    
+}
+
+.creator-name {
+    color: white;
+    letter-spacing: 0.5%;
+    padding-left: 5px;
+}

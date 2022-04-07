@@ -53,87 +53,93 @@ body {
     height: 100vh;
     font-family: Outfit, sans-serif;
 }
+
 .container {
     background-color:  hsl(216, 50%, 16%);
     width: 350px;
-    height: 596px;
     border-radius: 18px;
 }
 
+header {
+    margin: 0 24px;
+    border-bottom: 1px solid hsla(215, 52%, 70%, 0.3);
+    
+}
 .image {
-    height: 303px;
+    height: 302px;
     width: 302px;
-    margin: 24px 24px 0;
+    margin: 24px;
     border-radius: 7px;
 }
 
 #heading {
     color: white;
-    margin: 23px 24px 0px;
     font-size: 22px;
     font-weight: 600;
+    line-height: 28px;
 }
 
 p {
     color: hsl(215, 51%, 70%);
     font-size: 18px;
     font-weight: 300;
-    padding: 0 24px;
-    margin: 16px 0;
+    line-height: 26px;
+    /* padding: 0 24px; */
+    margin: 17px 0 23px;
 }
 
-
-
-.eth-price {
-    /* display: flex; */
-    margin-left: 24px;
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 23px;
 }
 
 .price {
     color: hsl(178, 100%, 50%);
     font-size: 16px;
     font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.015em;
     margin-left: 6px;
 }
-.info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.time-duration {
-    margin-right: 24px;
-}
-.child {
+
+/* .child {
     display: inline-block;
+} */
+
+.eth-price,.time-duration{
+    display: flex;
+    align-items: center;
 }
 
 .duration {
     margin-left: 7px;
     color: hsl(215, 51%, 70%);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
-    letter-spacing: 1%;
+    line-height: 135%;
+    /* identical to box height, or 22px */
+    letter-spacing: 0.01em;
 }
 
-hr {
-    width: 304px;
-    margin: 24px auto 18px;
+
+
+footer {
+    margin: 16px 24px 32px;
 }
 
 .creator {
     display: flex;
     align-items: center;
-    
 }
 
-
 .avatar {
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
     border: 1px solid white;
     border-radius: 50%;
-    margin-left: 24px;
 }
 
 .creator-details {
@@ -141,11 +147,14 @@ hr {
     font-size: 16px;
     font-weight: 400;
     padding-left: 18px;
-    
+    line-height: 22px;
+/* identical to box height, or 22px */
 }
 
 .creator-name {
     color: white;
     letter-spacing: 0.5%;
-    padding-left: 5px;
+    font-size: 16px;
+    letter-spacing: 0.005em;
+    /* padding-left: 3px; */
 }

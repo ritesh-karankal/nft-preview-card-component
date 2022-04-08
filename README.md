@@ -25,7 +25,7 @@ I'm really enjoying solving Frontend Mentor challenges. I followed a Web Develop
 
 ### Links
 
--   Solution URL: [You can see my solution here](https://your-solution-url.comhttps://www.frontendmentor.io/solutions/qr-code-component-using-css-flexbox-and-html5-rk3LIdsmc)
+-   Solution URL: [You can see my solution here](https://www.frontendmentor.io/solutions/nft-preview-card-with-overlay-hover-icon-SkHYivpQc)
 -   Live Site URL: [https://ritesh-karankal.github.io/nft-preview-card-component/](https://ritesh-karankal.github.io/nft-preview-card-component/)
 
 ## My process

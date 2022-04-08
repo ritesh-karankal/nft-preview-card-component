@@ -55,7 +55,7 @@ body {
 }
 
 .container {
-    background-color:  hsl(216, 50%, 16%);
+    background-color: hsl(216, 50%, 16%);
     width: 350px;
     border-radius: 18px;
 }
@@ -63,28 +63,62 @@ body {
 header {
     margin: 0 24px;
     border-bottom: 1px solid hsla(215, 52%, 70%, 0.3);
-    
 }
-.image {
+
+.image-wrapper {
+    background: center/cover url("images/image-equilibrium.jpg");
     height: 302px;
     width: 302px;
     margin: 24px;
     border-radius: 7px;
+    position: relative;
 }
 
-#heading {
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    border-radius: 7px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.icon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.heading {
     color: white;
     font-size: 22px;
     font-weight: 600;
     line-height: 28px;
+    transition: 0.3s ease;
 }
 
-p {
+.heading:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.description {
     color: hsl(215, 51%, 70%);
     font-size: 18px;
     font-weight: 300;
     line-height: 26px;
-    /* padding: 0 24px; */
     margin: 17px 0 23px;
 }
 
@@ -104,12 +138,12 @@ p {
     margin-left: 6px;
 }
 
-
 /* .child {
     display: inline-block;
 } */
 
-.eth-price,.time-duration{
+.eth-price,
+.time-duration {
     display: flex;
     align-items: center;
 }
@@ -124,13 +158,8 @@ p {
     letter-spacing: 0.01em;
 }
 
-
-
-footer {
-    margin: 16px 24px 32px;
-}
-
 .creator {
+    margin: 16px 24px 32px;
     display: flex;
     align-items: center;
 }
@@ -148,7 +177,7 @@ footer {
     font-weight: 400;
     padding-left: 18px;
     line-height: 22px;
-/* identical to box height, or 22px */
+    /* identical to box height, or 22px */
 }
 
 .creator-name {
@@ -156,5 +185,10 @@ footer {
     letter-spacing: 0.5%;
     font-size: 16px;
     letter-spacing: 0.005em;
-    /* padding-left: 3px; */
+    transition: 0.3s ease;
+}
+
+.creator-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
